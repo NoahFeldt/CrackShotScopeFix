@@ -10,6 +10,7 @@ public class ScopeFix extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		getConfig().options().copyDefaults(true);
+		saveConfig();
 		new PlayerListener(this);
 	}
 	
